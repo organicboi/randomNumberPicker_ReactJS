@@ -55,4 +55,5 @@ function copyResult() {
   document.execCommand("copy");
   document.body.removeChild(tempInput);
   alert("Result copied to clipboard!");
+  window.location.reload();
 }

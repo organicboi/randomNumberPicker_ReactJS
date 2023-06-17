@@ -134,4 +134,5 @@ function copyText() {
   document.body.removeChild(copyText);
   console.log(amount);
   alert("Text copied: " + finalText);
+  window.location.reload();
 }
