@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>PANNA</h2>
+      <div class="form-group">
+        <label for="array-select">Select an PANNA:</label>
+        <br />
+        <select id="array-select">
+          <option value="panna 1">panna 1</option>
+          <option value="panna 2">panna 2</option>
+          <option value="panna 3">panna 3</option>
+          <option value="panna 4">panna 4</option>
+          <option value="panna 5">panna 5</option>
+          <option value="panna 6">panna 6</option>
+          <option value="panna 7">panna 7</option>
+          <option value="panna 8">panna 8</option>
+          <option value="panna 9">panna 9</option>
+          <option value="panna 10">panna 0</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button class="btn" onclick="generateRandomNumbers()">
+          Generate Random Numbers
+        </button>
+      </div>
+      <div class="result">
+        <div id="result">Your Panna will appear here!</div>
+      </div>
+      <div class="form-group">
+        <label for="text-input">AMOUNT</label>
+        <input
+          type="text"
+          id="amount"
+          inputmode="numeric"
+          placeholder="Enter text"
+        />
+      </div>
+
+      <div>
+        <select id="text-select">
+          <option value="Kalyan ">Kalyan</option>
+          <option value="SRIDEVI ">SRIDEVI</option>
+          <option value="TIME BAZAR ">TIME BAZAR</option>
+          <option value="MADHUR DAY ">MADHUR DAY</option>
+          <option value="MILAN DAY ">MILAN DAY</option>
+          <!-- <option value="Text 6">Text 6</option>
+          <option value="Text 7">Text 7</option>
+          <option value="Text 8">Text 8</option>
+          <option value="Text 9">Text 9</option>
+          <option value="Text 10">Text 10</option> -->
+        </select>
+        <button onclick="copyText()">Copy</button>
+      </div>
+    </div>
+    <!-- copy area -->
+
+    <script src="java.js"></script>
+  </body>
+</html>

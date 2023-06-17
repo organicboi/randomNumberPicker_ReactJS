@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Motor Panna</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Motor Panna</h1>
+      <label for="numberInput">Enter numbers:</label>
+      <input
+        inputmode="numeric"
+        type="text"
+        id="numberInput"
+        placeholder="Enter numbers"
+      /><br />
+      <label for="additionalInput">Market Name:</label>
+      <input
+        type="text"
+        id="marketName"
+        placeholder="Enter additional text"
+      /><br />
+      <label for="additionalInput">Amount:</label>
+
+      <input
+        inputmode="numeric"
+        type="text"
+        id="playAmount"
+        placeholder="Enter additional text"
+      /><br />
+      <button onclick="generateCombinations()">Generate Combinations</button>
+      <div id="totalCount"></div>
+      <div id="result"></div>
+      <button id="copyButton" onclick="copyResult()">Copy Result</button>
+      <script src="java.js"></script>
+    </div>
+  </body>
+</html>
