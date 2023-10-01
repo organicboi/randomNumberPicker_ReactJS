@@ -72,6 +72,10 @@ const arrays = [
   },
 ];
 
+function handleOnChange(e) {
+  console.log(e.target.value);
+}
+
 // Function to pick random numbers without duplicates
 function pickRandomNumbers(array, count) {
   const randomNumbers = [];
