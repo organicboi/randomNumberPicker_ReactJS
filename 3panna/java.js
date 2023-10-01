@@ -1,8 +1,9 @@
+var combinations = [];
+var count = 0;
+
 function generateCombinations() {
   var numberInput = document.getElementById("numberInput").value;
   var numbers = numberInput.split("").map(Number);
-
-  var combinations = [];
 
   // Generate all possible combinations
   for (var i = 0; i < numbers.length - 2; i++) {
@@ -20,12 +21,19 @@ function generateCombinations() {
 
   // resultDiv.innerHTML = "<h2>Combinations:</h2>";
 
-  var count = combinations.length;
-  totalCountDiv.innerHTML += "<p>Total combinations: " + count + "</p>";
+  count = combinations.length;
+  totalCountDiv.innerHTML +=
+    "<p>Total Amount: " +
+    count +
+    " X " +
+    playAmount.value +
+    `= ${count * playAmount.value}` +
+    "</p>";
 
   for (var i = 0; i < combinations.length; i++) {
     resultDiv.innerHTML += combinations[i] + "<br>";
   }
+  console.log();
 }
 
 function copyResult() {
@@ -49,7 +57,13 @@ function copyResult() {
   }
 
   var tempInput = document.createElement("textarea");
-  tempInput.value = formattedText + "\n\n" + "total= " + playAmount + "/-";
+  tempInput.value =
+    formattedText +
+    `...=${playAmount}/-` +
+    "\n\n" +
+    "total= " +
+    `${count * playAmount}` +
+    "/-";
   document.body.appendChild(tempInput);
   tempInput.select();
   document.execCommand("copy");
