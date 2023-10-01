@@ -61,7 +61,7 @@ function copyResult() {
     formattedText +
     `...=${playAmount}/-` +
     "\n\n" +
-    "total= " +
+    "Total= " +
     `${count * playAmount}` +
     "/-";
   document.body.appendChild(tempInput);
